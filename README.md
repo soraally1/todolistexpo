@@ -98,14 +98,14 @@ npx expo install expo-dev-client
 
 ```
 todolist/
-├── app/                          # 📱 Expo Router - File-based routing
+├── app/                         # Expo Router - File-based routing
 │   ├── _layout.tsx              # Root layout (Stack Navigator)
 │   ├── modal.tsx                # Modal screen
 │   └── (tabs)/                  # Tab group
 │       ├── _layout.tsx          # Tab layout configuration
 │       ├── index.tsx            # Main todo screen
 │       └── explore.tsx          # Settings screen
-├── components/                   # Reusable components
+├── components/                  # Reusable components
 │   ├── ui/                      # UI primitives
 │   │   ├── icon-symbol.tsx      # Icon component
 │   │   └── collapsible.tsx      # Collapsible component
@@ -113,18 +113,18 @@ todolist/
 │   ├── themed-view.tsx          # Themed view component
 │   ├── TodoItem.tsx             # Todo item component
 │   └── ApiStatus.tsx            # API connection status
-├── services/                     # API layer
+├── services/                    # API layer
 │   └── api.ts                   # API service functions
-├── hooks/                        # Custom hooks
+├── hooks/                       # Custom hooks
 │   ├── useNotes.ts              # Notes state management
 │   └── use-color-scheme.ts      # Color scheme hook
-├── constants/                    # App constants
+├── constants/                   # App constants
 │   └── theme.ts                 # Colors & fonts configuration
 ├── assets/                      # Static assets
 │   └── images/                  # Images & icons
 ├── app.json                     # Expo configuration
 ├── package.json                 # Dependencies
-└── tsconfig.json               #  TypeScript config
+└── tsconfig.json                # TypeScript config
 ```
 
 ### Expo Go & Expo CLI
