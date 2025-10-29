@@ -105,7 +105,7 @@ todolist/
 │       ├── _layout.tsx          # Tab layout configuration
 │       ├── index.tsx            # Main todo screen
 │       └── explore.tsx          # Settings screen
-├── components/                   # 🧩 Reusable components
+├── components/                   # Reusable components
 │   ├── ui/                      # UI primitives
 │   │   ├── icon-symbol.tsx      # Icon component
 │   │   └── collapsible.tsx      # Collapsible component
@@ -113,18 +113,18 @@ todolist/
 │   ├── themed-view.tsx          # Themed view component
 │   ├── TodoItem.tsx             # Todo item component
 │   └── ApiStatus.tsx            # API connection status
-├── services/                     # 🔌 API layer
+├── services/                     # API layer
 │   └── api.ts                   # API service functions
-├── hooks/                        # 🎣 Custom hooks
+├── hooks/                        # Custom hooks
 │   ├── useNotes.ts              # Notes state management
 │   └── use-color-scheme.ts      # Color scheme hook
-├── constants/                    # ⚙️ App constants
+├── constants/                    # App constants
 │   └── theme.ts                 # Colors & fonts configuration
-├── assets/                      # 🖼️ Static assets
+├── assets/                      # Static assets
 │   └── images/                  # Images & icons
-├── app.json                     # 📋 Expo configuration
-├── package.json                 # 📦 Dependencies
-└── tsconfig.json               # 🔧 TypeScript config
+├── app.json                     # Expo configuration
+├── package.json                 # Dependencies
+└── tsconfig.json               #  TypeScript config
 ```
 
 ### Expo Go & Expo CLI
@@ -294,7 +294,7 @@ node_modules/
 .env.local
 ```
 
-### 🧪 Latihan: Live Reload Test
+### Latihan: Live Reload Test
 
 1. **Buka file** `app/(tabs)/index.tsx`
 2. **Ubah title** dari "My Todo List" ke "My Awesome Todo List"
@@ -305,7 +305,7 @@ node_modules/
 
 ## 3. Struktur & Arsitektur Project
 
-### 🏗️ Arsitektur Komponen
+### Arsitektur Komponen
 
 ```mermaid
 graph TB
@@ -609,9 +609,9 @@ const getSecureData = async (key: string): Promise<string | null> => {
 // Debug API requests
 const debugLog = (method: string, url: string, data?: any, response?: any) => {
   if (__DEV__) {
-    console.log(`🚀 API ${method}: ${url}`);
-    if (data) console.log('📤 Request data:', data);
-    if (response) console.log('📥 Response:', response);
+    console.log(` API ${method}: ${url}`);
+    if (data) console.log(' Request data:', data);
+    if (response) console.log(' Response:', response);
   }
 };
 ```
@@ -644,7 +644,7 @@ const apiRequest = async (endpoint: string, options: RequestInit = {}) => {
 };
 ```
 
-### 🧪 Latihan: Tambah Endpoint Baru
+### Latihan: Tambah Endpoint Baru
 
 #### **1. Tambah Endpoint di API Service**
 ```typescript
@@ -730,7 +730,7 @@ useEffect(() => {
 
 ## 5. Build & Deployment
 
-### 🏗️ Development vs Production
+### Development vs Production
 
 #### **Development Build**
 ```bash
@@ -867,7 +867,7 @@ eas update --channel production --message "New features"
 eas update --branch production --message "Rollback to previous version"
 ```
 
-### 🔐 Kredensial & Keystore
+### Kredensial & Keystore
 
 #### **Android Keystore**
 ```bash
