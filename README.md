@@ -836,7 +836,7 @@ eas submit --platform ios
 eas submit --platform all
 ```
 
-### 📱 Over The Air (OTA) Updates
+### Over The Air (OTA) Updates
 
 #### **Setup OTA Updates**
 ```bash
